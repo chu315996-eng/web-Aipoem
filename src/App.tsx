@@ -5,6 +5,7 @@ import PoemCreator from './components/PoemCreator';
 import PoemGallery from './components/PoemGallery';
 import Collections from './components/Collections';
 import Profile from './components/Profile';
+import AncientPoets from './components/AncientPoets';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -23,6 +24,8 @@ function App() {
       )}
 
       {activeSection === 'create' && <PoemCreator />}
+
+      {activeSection === 'poets' && <AncientPoets />}
 
       {activeSection === 'gallery' && <PoemGallery />}
 
@@ -52,6 +55,14 @@ function App() {
                     className="hover:text-white transition-colors"
                   >
                     AI创作
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => handleNavigate('poets')}
+                    className="hover:text-white transition-colors"
+                  >
+                    古人智能体
                   </button>
                 </li>
                 <li>

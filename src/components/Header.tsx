@@ -1,4 +1,4 @@
-import { Sparkles, BookOpen, Heart, User, PenTool } from 'lucide-react';
+import { Sparkles, BookOpen, Heart, User, PenTool, Users } from 'lucide-react';
 
 type HeaderProps = {
   activeSection: string;
@@ -9,6 +9,7 @@ export default function Header({ activeSection, onNavigate }: HeaderProps) {
   const navItems = [
     { id: 'home', label: '首页', icon: Sparkles },
     { id: 'create', label: 'AI创作', icon: PenTool },
+    { id: 'poets', label: '古人智能体', icon: Users },
     { id: 'gallery', label: '诗词长廊', icon: BookOpen },
     { id: 'collections', label: '我的收藏', icon: Heart },
     { id: 'profile', label: '个人中心', icon: User },
