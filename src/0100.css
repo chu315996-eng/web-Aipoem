@@ -1,0 +1,188 @@
+/* style.css */
+/* 设计系统 */
+:root {
+    --primary-color: #2A5CAA;         /* 主品牌色-青花蓝 */
+    --secondary-color: #F4A261;       /* 辅助色-秋香橙 */
+    --accent-color: #8AB17D;          /* 强调色-竹青 */
+    --bg-light: #F9F7F3;              /* 背景色-宣纸白 */
+    --text-dark: #2D3748;             /* 正文色-墨黑 */
+    --border-light: #E2E8F0;          /* 边框色-云灰 */
+}
+
+/* 基础设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: '微软雅黑', '宋体', serif;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* 水墨背景 */
+.ink-bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: 
+        radial-gradient(circle at 10% 20%, 
+            rgba(42,92,170,0.05) 0%,
+            transparent 50%),
+        radial-gradient(circle at 90% 80%, 
+            rgba(244,162,97,0.05) 0%,
+            transparent 50%);
+    z-index: -1;
+}
+
+/* 导航栏 */
+.main-nav {
+    background: rgba(249,247,243,0.95);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.brand i {
+    font-size: 1.2em;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: var(--text-dark);
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-menu a:hover {
+    background: rgba(42,92,170,0.08);
+    color: var(--primary-color);
+}
+
+/* 核心价值展示 */
+.hero {
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    letter-spacing: 0.05em;
+}
+
+/* 功能矩阵 */
+.feature-matrix {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    border: 1px solid var(--border-light);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.icon {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(138,177,125,0.1);
+    border-radius: 50%;
+}
+
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 2rem;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .feature-matrix {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}
