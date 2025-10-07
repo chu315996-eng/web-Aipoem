@@ -8,7 +8,7 @@ type HeaderProps = {
 export default function Header({ activeSection, onNavigate }: HeaderProps) {
   const navItems = [
     { id: 'home', label: '首页', icon: Sparkles },
-    { id: 'create', label: 'AI创作', icon: PenTool },
+    { id: 'create', label: 'Ai辅助创作', icon: PenTool },
     { id: 'poets', label: '古人智能体', icon: Users },
     { id: 'gallery', label: '诗词长廊', icon: BookOpen },
     { id: 'collections', label: '我的收藏', icon: Heart },
@@ -23,9 +23,9 @@ export default function Header({ activeSection, onNavigate }: HeaderProps) {
             className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity"
             onClick={() => onNavigate('home')}
           >
-            <img src="/logo.jpg" alt="AI写诗" className="h-12 w-auto rounded-lg shadow-sm" />
+            <img src="/logo.jpg" alt="Ai写诗" className="h-12 w-auto rounded-lg shadow-sm" />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-[#2A5CAA]">AI写诗</span>
+              <span className="text-2xl font-bold text-[#2A5CAA]">Ai写诗</span>
               <span className="text-sm text-[#F4A261] tracking-wider">智能诗词创作平台</span>
             </div>
           </div>

@@ -39,7 +39,7 @@ function App() {
             <div>
               <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                 <img src="/logo.jpg" alt="Logo" className="h-8 w-auto rounded" />
-                AI写诗
+                Ai写诗
               </h3>
               <p className="text-gray-400 leading-relaxed">
                 智能诗词创作平台，融合传统文化与现代科技，让每个人都能成为诗人。
@@ -54,7 +54,7 @@ function App() {
                     onClick={() => handleNavigate('create')}
                     className="hover:text-white transition-colors"
                   >
-                    AI创作
+                    Ai辅助创作
                   </button>
                 </li>
                 <li>
@@ -95,13 +95,13 @@ function App() {
             <div>
               <h4 className="font-semibold mb-4">关于我们</h4>
               <p className="text-gray-400 text-sm leading-relaxed">
-                我们致力于用AI技术传承和发扬中华诗词文化，让古老的艺术形式焕发新的生命力。
+                我们致力于用Ai技术传承和发扬中华诗词文化，让古老的艺术形式焕发新的生命力。
               </p>
             </div>
           </div>
 
           <div className="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
-            <p>© 2024 AI写诗文创平台. 传承诗韵，智创未来.</p>
+            <p>© 2024 Ai写诗文创平台. 传承诗韵，智创未来.</p>
           </div>
         </div>
       </footer>

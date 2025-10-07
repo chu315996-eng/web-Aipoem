@@ -20,11 +20,11 @@ export default function Hero({ onStartCreate }: HeroProps) {
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <div className="mb-8 inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-md">
           <Sparkles className="text-[#F4A261]" size={20} />
-          <span className="text-sm font-medium text-gray-700">AI驱动的诗词创作体验</span>
+          <span className="text-sm font-medium text-gray-700">Ai辅助的诗词创作体验</span>
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold text-[#2A5CAA] mb-6 leading-tight">
-          诗意人生，AI相伴
+          诗意人生，Ai相伴
         </h1>
 
         <p className="text-xl md:text-2xl text-[#F4A261] mb-8 tracking-wide">
@@ -32,7 +32,7 @@ export default function Hero({ onStartCreate }: HeroProps) {
         </p>
 
         <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-          通过先进的AI技术，结合中华传统诗词文化，为您打造专属的诗意创作空间。
+          通过先进的Ai技术，结合中华传统诗词文化，为您打造专属的诗意创作空间。
           无论是古风雅韵，还是现代诗情，让灵感在指尖流转。
         </p>
 
@@ -57,7 +57,7 @@ export default function Hero({ onStartCreate }: HeroProps) {
               <Sparkles className="text-[#8AB17D]" size={24} />
             </div>
             <h3 className="text-lg font-semibold text-gray-800 mb-2">智能创作</h3>
-            <p className="text-gray-600 text-sm">AI辅助，激发灵感，创作专属诗词</p>
+            <p className="text-gray-600 text-sm">Ai辅助，激发灵感，创作专属诗词</p>
           </div>
 
           <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
